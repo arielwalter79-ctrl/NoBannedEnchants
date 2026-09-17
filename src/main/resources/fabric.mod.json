@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "nobannedenchants",
+  "version": "${version}",
+  "name": "No Banned Enchants",
+  "description": "Blocks Thorns, Density and Breach from being applied using anvils.",
+  "authors": [
+    "TheGreenVillageSMP"
+  ],
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "com.thegreenvillagesmp.nobannedenchants.NoBannedEnchants"
+    ]
+  },
+  "mixins": [
+    "nobannedenchants.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.0",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
